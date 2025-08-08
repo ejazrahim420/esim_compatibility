@@ -1,6 +1,6 @@
 name: esim_compatibility
 description: "Check if the device is eSIM compatible (native code for Android & iOS)."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ejazrahim420
 repository: https://github.com/ejazrahim420/esim_compatibility
 issue_tracker: https://github.com/ejazrahim420/esim_compatibility/issues
