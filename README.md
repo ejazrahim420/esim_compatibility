@@ -20,7 +20,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  esim_compatibility: ^1.0.1
+  esim_compatibility: ^1.0.2
 ````
 
 Then run:

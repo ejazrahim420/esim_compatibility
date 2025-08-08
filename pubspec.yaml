@@ -1,14 +1,16 @@
 name: esim_compatibility
 description: "Check if the device is eSIM compatible (native code for Android & iOS)."
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/ejazrahim420
 repository: https://github.com/ejazrahim420/esim_compatibility
 issue_tracker: https://github.com/ejazrahim420/esim_compatibility/issues
 license: MIT
 
 environment:
-  sdk: ^3.7.2
-  flutter: '>=3.3.0'
+  # sdk: ^3.7.2
+  # flutter: '>=3.3.0'
+  sdk: ">=2.18.0 <4.0.0"
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:

@@ -21,3 +21,8 @@
   - Compares against known eSIM-compatible Apple devices.
 - Provided simple Dart API:
   - `EsimCompatibility.isEsimCompatible()` returns `true` or `false`.
+
+
+  ## 1.0.2
+
+- Decreased the min sdk version
