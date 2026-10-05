@@ -16,7 +16,7 @@ public enum Model : String {
          iPod6              = "iPod 6",
          iPod7              = "iPod 7",
          
-         //iPad
+     //iPad
          iPad2              = "iPad 2",
          iPad3              = "iPad 3",
          iPad4              = "iPad 4",
@@ -25,22 +25,30 @@ public enum Model : String {
          iPadAir3           = "iPad Air 3",
          iPadAir4           = "iPad Air 4",
          iPadAir5           = "iPad Air 5",
+         iPadAir11M2        = "iPad Air 11-inch (M2)",
+         iPadAir13M2        = "iPad Air 13-inch (M2)",
+         iPadAir11M3        = "iPad Air 11-inch (M3)",
+         iPadAir13M3        = "iPad Air 13-inch (M3)",
+         iPadAir11M4        = "iPad Air 11-inch (M4)",
+         iPadAir13M4        = "iPad Air 13-inch (M4)",
          iPad5              = "iPad 5", //iPad 2017
          iPad6              = "iPad 6", //iPad 2018
          iPad7              = "iPad 7", //iPad 2019
          iPad8              = "iPad 8", //iPad 2020
          iPad9              = "iPad 9", //iPad 2021
          iPad10             = "iPad 10", //iPad 2022
+         iPadA16            = "iPad (A16)", //2025
          
-         //iPad Mini
+       //iPad Mini
          iPadMini           = "iPad Mini",
          iPadMini2          = "iPad Mini 2",
          iPadMini3          = "iPad Mini 3",
          iPadMini4          = "iPad Mini 4",
          iPadMini5          = "iPad Mini 5",
          iPadMini6          = "iPad Mini 6",
+         iPadMiniA17Pro     = "iPad mini (A17 Pro)",
          
-         //iPad Pro
+//iPad Pro
          iPadPro9_7         = "iPad Pro 9.7\"",
          iPadPro10_5        = "iPad Pro 10.5\"",
          iPadPro11          = "iPad Pro 11\"",
@@ -51,6 +59,12 @@ public enum Model : String {
          iPadPro3_12_9      = "iPad Pro 3 12.9\"",
          iPadPro4_12_9      = "iPad Pro 4 12.9\"",
          iPadPro5_12_9      = "iPad Pro 5 12.9\"",
+         iPadPro4_11        = "iPad Pro 11\" 4th gen",
+         iPadPro6_12_9      = "iPad Pro 12.9\" 6th gen",
+         iPadPro11M4        = "iPad Pro 11-inch (M4)",
+         iPadPro13M4        = "iPad Pro 13-inch (M4)",
+         iPadPro11M5        = "iPad Pro 11-inch (M5)",
+         iPadPro13M5        = "iPad Pro 13-inch (M5)",
          
          //iPhone
          iPhone4            = "iPhone 4",
@@ -97,6 +111,15 @@ public enum Model : String {
          iPhone16Plus       = "iPhone 16 Plus",
          iPhone16Pro        = "iPhone 16 Pro",
          iPhone16ProMax     = "iPhone 16 Pro Max",
+         iPhone16e          = "iPhone 16e",
+         iPhone17           = "iPhone 17",
+         iPhone17Pro        = "iPhone 17 Pro",
+         iPhone17ProMax     = "iPhone 17 Pro Max",
+         iPhoneAir          = "iPhone Air",
+         iPhone17e          = "iPhone 17e",
+         iPhone18Pro        = "iPhone 18 Pro",
+         iPhone18ProMax     = "iPhone 18 Pro Max",
+         iPhoneDuo          = "iPhone Duo",
          
          // Apple Watch
          AppleWatch1         = "Apple Watch 1gen",
@@ -129,7 +152,7 @@ public extension UIDevice {
         switch type {
             
         case
-                .iPhoneXR, .iPhoneXS, .iPhoneXSMax, .iPhone11, .iPhone11Pro, .iPhone11ProMax, .iPhone12, .iPhone12Pro, .iPhone12ProMax, .iPhone12Mini, .iPhone13, .iPhone13Pro, .iPhone13ProMax, .iPhone13Mini,  .iPhone14, .iPhone14Pro, .iPhone14ProMax, .iPhone14Plus, .iPhone15, .iPhone15Pro, .iPhone15ProMax,.iPhone15Plus , .iPhone16, .iPhone16Pro, .iPhone16ProMax, .iPhone16Plus , .iPhoneSE2, .iPhoneSE3
+                .iPhoneXR, .iPhoneXS, .iPhoneXSMax, .iPhone11, .iPhone11Pro, .iPhone11ProMax, .iPhone12, .iPhone12Pro, .iPhone12ProMax, .iPhone12Mini, .iPhone13, .iPhone13Pro, .iPhone13ProMax, .iPhone13Mini,  .iPhone14, .iPhone14Pro, .iPhone14ProMax, .iPhone14Plus, .iPhone15, .iPhone15Pro, .iPhone15ProMax,.iPhone15Plus , .iPhone16, .iPhone16Pro, .iPhone16ProMax, .iPhone16Plus, .iPhone16e, .iPhone17, .iPhone17Pro, .iPhone17ProMax, .iPhoneAir, .iPhone17e, .iPhone18Pro, .iPhone18ProMax, .iPhoneDuo, .iPhoneSE2, .iPhoneSE3
             : return true
             
         default: return false
@@ -163,7 +186,7 @@ public extension UIDevice {
             "iPod7,1"   : .iPod6,
             "iPod9,1"   : .iPod7,
             
-            //iPad
+          //iPad
             "iPad2,1"   : .iPad2,
             "iPad2,2"   : .iPad2,
             "iPad2,3"   : .iPad2,
@@ -186,6 +209,8 @@ public extension UIDevice {
             "iPad12,2"  : .iPad9,
             "iPad13,18" : .iPad10,
             "iPad13,19" : .iPad10,
+            "iPad15,7"  : .iPadA16,
+            "iPad15,8"  : .iPadA16,
             
             //iPad Mini
             "iPad2,5"   : .iPadMini,
@@ -203,6 +228,8 @@ public extension UIDevice {
             "iPad11,2"  : .iPadMini5,
             "iPad14,1"  : .iPadMini6,
             "iPad14,2"  : .iPadMini6,
+            "iPad16,1"  : .iPadMiniA17Pro,
+            "iPad16,2"  : .iPadMiniA17Pro,
             
             //iPad Pro
             "iPad6,3"   : .iPadPro9_7,
@@ -233,6 +260,18 @@ public extension UIDevice {
             "iPad13,9"  : .iPadPro5_12_9,
             "iPad13,10" : .iPadPro5_12_9,
             "iPad13,11" : .iPadPro5_12_9,
+            "iPad14,3"  : .iPadPro4_11,
+            "iPad14,4"  : .iPadPro4_11,
+            "iPad14,5"  : .iPadPro6_12_9,
+            "iPad14,6"  : .iPadPro6_12_9,
+            "iPad16,3"  : .iPadPro11M4,
+            "iPad16,4"  : .iPadPro11M4,
+            "iPad16,5"  : .iPadPro13M4,
+            "iPad16,6"  : .iPadPro13M4,
+            "iPad17,1"  : .iPadPro11M5,
+            "iPad17,2"  : .iPadPro11M5,
+            "iPad17,3"  : .iPadPro13M5,
+            "iPad17,4"  : .iPadPro13M5,
             
             //iPad Air
             "iPad4,1"   : .iPadAir,
@@ -246,6 +285,19 @@ public extension UIDevice {
             "iPad13,2"  : .iPadAir4,
             "iPad13,16" : .iPadAir5,
             "iPad13,17" : .iPadAir5,
+            "iPad14,8"  : .iPadAir11M2,
+            "iPad14,9"  : .iPadAir11M2,
+            "iPad14,10" : .iPadAir13M2,
+            "iPad14,11" : .iPadAir13M2,
+            "iPad15,3"  : .iPadAir11M3,
+            "iPad15,4"  : .iPadAir11M3,
+            "iPad15,5"  : .iPadAir13M3,
+            "iPad15,6"  : .iPadAir13M3,
+            // iPad Air M4 (2026) — correct IDs are iPad16,8–11 (not iPad17,x)
+            "iPad16,8"  : .iPadAir11M4,
+            "iPad16,9"  : .iPadAir11M4,
+            "iPad16,10" : .iPadAir13M4,
+            "iPad16,11" : .iPadAir13M4,
             
             //iPhone
             "iPhone3,1" : .iPhone4,
@@ -303,8 +355,19 @@ public extension UIDevice {
             "iPhone17,4" : .iPhone16Plus,
             "iPhone17,1" : .iPhone16Pro,
             "iPhone17,2" : .iPhone16ProMax,
+            "iPhone17,5" : .iPhone16e,
             
-            
+            "iPhone18,1" : .iPhone17Pro,
+            "iPhone18,2" : .iPhone17ProMax,
+            "iPhone18,3" : .iPhone17,
+            "iPhone18,4" : .iPhoneAir,
+            "iPhone18,5" : .iPhone17e,
+
+            "iPhone19,2" : .iPhone18Pro,
+            "iPhone19,3" : .iPhone18ProMax, // US
+            "iPhone19,7" : .iPhone18ProMax, // Global / CA / CN
+            "iPhone19,4" : .iPhoneDuo,
+         
             // Apple Watch
             "Watch1,1" : .AppleWatch1,
             "Watch1,2" : .AppleWatch1,
